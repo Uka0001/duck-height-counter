@@ -1,7 +1,7 @@
 # duck-height-counter
 ## Test task for RAS Tech Summer
 
-###Task:
+### Task:
 The data is N rubber ducks to be stacked in a row.
 Each duck has a specific height and width. 
 We need to arrange the ducks in such a way that the sum of the heights of the ducks used
