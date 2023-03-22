@@ -8,9 +8,16 @@ class DuckAppTest {
     private CountDuckHeight countDuckHeight = new CountDuckHeight();
 
     @Test
-    void countDucksHeight() {
+    void countDucksHeightHungrySorting_notOk() {
         int expected = 65;
-        int actual = countDuckHeight.getTotalHeight();
+        int actual = countDuckHeight.getTotalHeightHungrySorting();
+        Assertions.assertNotEquals(expected, actual, "Method must count proper max height of ducks");
+    }
+
+    @Test
+    void countDucksHeightMyCustomSorting_ok() {
+        int expected = 65;
+        int actual = countDuckHeight.getTotalHeightMyCustomSorting();
         Assertions.assertEquals(expected, actual, "Method must count proper max height of ducks");
     }
 

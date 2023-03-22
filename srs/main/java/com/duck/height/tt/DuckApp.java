@@ -19,7 +19,9 @@ public class DuckApp {
     private static CountDuckHeight countDuckHeight = new CountDuckHeight();
 
     public static void main(String[] args) {
-        int totalHeight = countDuckHeight.getTotalHeight();
+        int totalHeight = countDuckHeight.getTotalHeightHungrySorting();
+        int totalHeightAlternative = countDuckHeight.getTotalHeightMyCustomSorting();
         System.out.println(totalHeight);
+        System.out.println(totalHeightAlternative);
     }
 }
